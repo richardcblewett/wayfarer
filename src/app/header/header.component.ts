@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { NavbtnComponent } from '../navbtn/navbtn.component';
+
 
 @Component({
   selector: 'app-header',

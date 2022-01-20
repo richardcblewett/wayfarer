@@ -7,13 +7,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './header/header.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { TopicsComponent } from './topics/topics.component';
+import { NavbtnComponent } from './navbtn/navbtn.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     CarouselComponent,
-    TopicsComponent
+    TopicsComponent,
+    NavbtnComponent
   ],
   imports: [
     BrowserModule,

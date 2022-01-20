@@ -1,0 +1,11 @@
+<p>
+    <button type="button" class="btn button-outline-primary" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+        Nav
+    </button>
+</p>
+<div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+    <ul>
+        <li>San Francisco</li>
+        <li>London</li>
+    </ul>
+</div>

@@ -1,4 +1,9 @@
 h1 {
     min-height: 50px;
+    text-align: center;
+}
+header{
     background-color: aqua;
+    display: flex;
+    
 }
