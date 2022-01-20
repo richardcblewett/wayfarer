@@ -1,0 +1,7 @@
+.container{
+    columns: 3;
+    column-width: 1em;
+}
+h2 {
+    text-align: center;
+}
