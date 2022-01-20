@@ -1,5 +1,15 @@
 # Wayfarer
 
+
+## Design Decisions
+- We decided to use bootstrap to style the app because we wanted to become familiar with the technology.
+- We chose to deploy on heroku because we wanted the opportunity to learn how to do that. 
+
+
+## WireFrames
+[WireFrames](./src/assets/wireframes.png)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
 
 ## Development server
