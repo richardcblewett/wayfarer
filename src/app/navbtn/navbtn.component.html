@@ -1,6 +1,8 @@
 <p>
-    <button type="button" class="btn button-outline-primary" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
-        Nav
+    <button type="button" class="btn button-outline-primary" (click)="collapse.toggle()"
+        [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+        <!-- image source: https://www.flaticon.com/free-icon/menu-button-of-three-horizontal-lines_56763 -->
+        <img src="../../assets/menu-button-of-three-horizontal-lines.png" alt="menu button">
     </button>
 </p>
 <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
