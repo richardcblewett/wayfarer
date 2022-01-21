@@ -1,3 +1,7 @@
+li {
+    text-decoration: none;
+    list-style: none;
+}
 img {
     height: 30px;
     width: auto;

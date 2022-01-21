@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbtnComponent implements OnInit {
   isCollapsed = true;
+  cities= ["San Francisco", "London", "Sydney", "Seattle"]
   constructor() { }
 
   ngOnInit(): void {
