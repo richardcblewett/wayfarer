@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { locations } from '../locations';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-cities',
@@ -7,12 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CitiesComponent implements OnInit {
 
-  cityName: string = 'San Francisco';
-  cityImage: string = '';
+  city: any;
+  cityName: string = "";
+  cityImage: string = "";
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.route.paramMap.subscribe(params => {
+      this.city = locations.find(city => {
+        let paramId: string = params.get("id") || "";
+        return city.id === parseInt(paramId);
+      });
+    });
   }
 
 }
