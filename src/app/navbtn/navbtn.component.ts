@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { locations } from '../locations';
 
 @Component({
   selector: 'app-navbtn',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbtnComponent implements OnInit {
   isCollapsed = true;
-  cities= ["San Francisco", "London", "Sydney", "Seattle"]
+  cities = locations;
   constructor() { }
 
   ngOnInit(): void {
