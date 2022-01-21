@@ -8,6 +8,9 @@ import { HeaderComponent } from './header/header.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { TopicsComponent } from './topics/topics.component';
 import { NavbtnComponent } from './navbtn/navbtn.component';
+import { CitiesComponent } from './cities/cities.component';
+import { PostsComponent } from './posts/posts.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { NavbtnComponent } from './navbtn/navbtn.component';
     HeaderComponent,
     CarouselComponent,
     TopicsComponent,
-    NavbtnComponent
+    NavbtnComponent,
+    CitiesComponent,
+    PostsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
