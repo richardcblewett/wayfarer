@@ -2,8 +2,10 @@ h1 {
     min-height: 50px;
     text-align: center;
 }
-header{
+
+header {
     background-color: aqua;
     display: flex;
-    
+    justify-content: space-between;
+    align-items: center;
 }
