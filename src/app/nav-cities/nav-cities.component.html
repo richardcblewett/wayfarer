@@ -1,18 +1,18 @@
+<!-- this container should fill up the width it is alloted -->
 <div class="container-fluid">
-    <div class="row">
-        <div>
-            <h2>
-                Cities
-            </h2>
-            <div *ngFor="let city of cities" class="row card">
-                <div class="col=6">
-                    <img src="{{city.image}}" alt="city image">
-                </div>
-                <div class="col-6">
-                    <h3>
-                        <a routerLink="/cities/{{city.id}}">{{city.name}}</a>
-                    </h3>
-                </div>
+    <div>
+        <h2>
+            Cities
+        </h2>
+        <!-- "card" is a built-in bootstrap class.
+        "row" wraps the card and assures alignment -->
+        <div *ngFor="let city of cities" class="card row">
+            <img src="{{city.image}}" alt="city image" class="card-image">
+            <!-- the "container" keeps the card nicely aligned -->
+            <div class="container">
+                <h3>
+                    <a class="card-link" routerLink="/cities/{{city.id}}">{{city.name}}</a>
+                </h3>
             </div>
         </div>
     </div>
