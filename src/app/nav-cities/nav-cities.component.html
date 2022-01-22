@@ -1,0 +1,19 @@
+<div class="container-fluid">
+    <div class="row">
+        <div>
+            <h2>
+                Cities
+            </h2>
+            <div *ngFor="let city of cities" class="row card">
+                <div class="col=6">
+                    <img src="{{city.image}}" alt="city image">
+                </div>
+                <div class="col-6">
+                    <h3>
+                        <a routerLink="/cities/{{city.id}}">{{city.name}}</a>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
