@@ -32,4 +32,31 @@ export const POSTS = [{
     date: "1/19/2022",
     city: "London"
 },
+{
+    id: 5,
+    title: "Rain Capital of the World",
+    summary: "Urna molestie at elementum eu facilisis sed odio. morbi quis. Tristique senectus et netus et malesuada ",
+    description: "Urna molestie at elementum eu facilisis sed odio morbi quis. Tristique senectus et netus et malesuada fames ac turpis. Leo vel orci porta non pulvinar. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. In eu mi bibendum neque egestas congue. Sed risus ultricies tristique nulla aliquet enim tortor.",
+    author: "Just A Cup",
+    date: "1/19/2022",
+    city: "Seattle"
+},
+{
+    id: 6,
+    title: "Opera Capital of the World",
+    summary: "Urna molestie at elementum eu facilisis sed odio. morbi quis. Tristique senectus et netus et malesuada ",
+    description: "Urna molestie at elementum eu facilisis sed odio morbi quis. Tristique senectus et netus et malesuada fames ac turpis. Leo vel orci porta non pulvinar. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. In eu mi bibendum neque egestas congue. Sed risus ultricies tristique nulla aliquet enim tortor.",
+    author: "Just A Cup",
+    date: "1/19/2022",
+    city: "Sydney"
+},
+{
+    id: 7,
+    title: "Drama Capital of the World",
+    summary: "Urna molestie at elementum eu facilisis sed odio. morbi quis. Tristique senectus et netus et malesuada ",
+    description: "Urna molestie at elementum eu facilisis sed odio morbi quis. Tristique senectus et netus et malesuada fames ac turpis. Leo vel orci porta non pulvinar. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. In eu mi bibendum neque egestas congue. Sed risus ultricies tristique nulla aliquet enim tortor.",
+    author: "Just A Cup",
+    date: "1/18/2022",
+    city: "London"
+},
 ]
