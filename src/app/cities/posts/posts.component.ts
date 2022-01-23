@@ -13,6 +13,7 @@ export class PostsComponent implements OnInit {
   
   post: any;
   posts= POSTS;
+  cityName= "San Francisco";
   
   constructor(private route: ActivatedRoute) { }
 
