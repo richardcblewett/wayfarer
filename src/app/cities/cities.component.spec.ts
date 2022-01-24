@@ -1,3 +1,5 @@
+import { RouterTestingModule } from '@angular/router/testing';
+import { HttpClientModule } from '@angular/common/http';
 import {ComponentFixture, fakeAsync, TestBed} from '@angular/core/testing';
 import { CitiesComponent } from './cities.component';
 import {RouterTestingModule} from "@angular/router/testing";
@@ -7,13 +9,14 @@ import {AppRoutingModule} from "../app-routing.module";
 
 describe('CitiesComponent', () => {
   let component: CitiesComponent;
+  let name : CitiesComponent[];
   let fixture: ComponentFixture<CitiesComponent>;
   let router:Router
   let location:Location;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RouterTestingModule, AppRoutingModule],
+      imports: [RouterTestingModule, AppRoutingModule,HttpClientModule],
       declarations: [ CitiesComponent ]
     })
     .compileComponents();

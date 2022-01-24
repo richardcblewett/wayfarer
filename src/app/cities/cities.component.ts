@@ -11,14 +11,17 @@ import { POSTS } from './posts/posts';
 export class CitiesComponent implements OnInit {
 
   city: any;
+  // cityName: string = "";
+  // cityImage: string = "";
   posts = POSTS;
-
+  // id: number|null;
+  
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
       this.city = locations.find(city => {
-        let paramId: string = params.get("id") || "";
+        let paramId: string = params.get("id") || '';
         return city.id === parseInt(paramId);
       });
     });

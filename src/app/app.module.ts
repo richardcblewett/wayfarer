@@ -13,7 +13,7 @@ import { PostsComponent } from './cities/posts/posts.component';
 import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
 import { NavCitiesComponent } from './nav-cities/nav-cities.component';
-import { PostComponent } from './cities/posts/post/post.component';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +27,7 @@ import { PostComponent } from './cities/posts/post/post.component';
     HomeComponent,
     SearchComponent,
     NavCitiesComponent,
-    PostComponent
+ 
   ],
   imports: [
     BrowserModule,
