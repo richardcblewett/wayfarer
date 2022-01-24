@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { locations } from '../locations';
 import { ActivatedRoute } from '@angular/router';
+import { POSTS } from './posts/posts';
 
 @Component({
   selector: 'app-cities',
@@ -12,7 +13,8 @@ export class CitiesComponent implements OnInit {
   city: any;
   cityName: string = "";
   cityImage: string = "";
-
+  posts = POSTS;
+  
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
