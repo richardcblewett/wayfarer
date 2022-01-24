@@ -3,6 +3,7 @@ import { CitiesComponent } from './cities.component';
 import {RouterTestingModule} from "@angular/router/testing";
 import {Location} from "@angular/common";
 import {Router} from "@angular/router";
+import {AppRoutingModule} from "../app-routing.module";
 
 describe('CitiesComponent', () => {
   let component: CitiesComponent;
@@ -12,7 +13,7 @@ describe('CitiesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RouterTestingModule],
+      imports: [RouterTestingModule, AppRoutingModule],
       declarations: [ CitiesComponent ]
     })
     .compileComponents();
@@ -29,7 +30,13 @@ describe('CitiesComponent', () => {
 
   it('navigate to "/2" takes you to london', fakeAsync(() => {
     router.navigate(["cities/2"]).then(() => {
-      expect(location.path()).toBe("cities/2");
+      expect(location.path()).toBe("/cities/2");
+    });
+  }));
+
+  it('navigate to "/5" to take you to gibralter which does not exist', fakeAsync(() => {
+    router.navigate(["cities/5"]).then(() => {
+      expect(location.path()).toBe("/cities/5");
     });
   }));
 });
