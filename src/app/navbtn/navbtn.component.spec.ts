@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import { NavbtnComponent } from './navbtn.component';
 
 describe('NavbtnComponent', () => {
@@ -8,7 +8,8 @@ describe('NavbtnComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NavbtnComponent ]
+      declarations: [ NavbtnComponent ],
+      imports: [NgbModule],
     })
     .compileComponents();
   });
@@ -16,7 +17,7 @@ describe('NavbtnComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(NavbtnComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
+    //fixture.detectChanges();
   });
 
   it('should create', () => {
