@@ -8,7 +8,7 @@
 <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
     <ul>
         <li>
-            <a routerLink='/'>Home</a>
+            <a (click)="collapse.toggle()" routerLink='/'>Home</a>
         </li>
         <li> Cities
             <ul>

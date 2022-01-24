@@ -11,11 +11,11 @@ import { POSTS } from './posts/posts';
 export class CitiesComponent implements OnInit {
 
   city: any;
-  // cityName: string = "";
+  cityName: string = "";
   // cityImage: string = "";
   posts = POSTS;
   // id: number|null;
-  
+
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
