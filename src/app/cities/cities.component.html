@@ -7,11 +7,11 @@
     <h3>{{this.cityName}} Posts</h3>
     <div>
         <ul *ngFor="let post of posts">
-            <li *ngIf="city.name === post.city">
+            <li *ngIf="city.name === post.city" class="card row" >
                 <span>
-                    <h3><a routerLink="/cities/{{city.id}}/posts/{{post.id}}">{{post.title}}</a></h3>
-                    <p>{{post.summary}}</p>
-                    <p>{{post.date | date}}</p>
+                    <h3><a class="card-link" routerLink="/cities/{{city.id}}/posts/{{post.id}}">{{post.title}}</a></h3>
+                    <p class="card-text" >{{post.summary}}</p>
+                    <p class="card-subtitle">{{post.date | date}}</p>
                 </span>
             </li>
         </ul>
