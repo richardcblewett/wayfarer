@@ -1,17 +1,23 @@
 img {
-    height: 400px;
-    width: 640px;
+    height: 300px;
+    width: 480px;
 }
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 40% 15% 1fr;
+    grid-template-rows: 300px 1fr;
     margin: 25px;
 }
 
 .cities {
     grid-column: 1;
     grid-row: 1 / span 4;
-    margin: 0px;
+    margin: 0;
+}
+
+.card {
+  width: 480px;
+  margin-left: -40px;
+  justify-content: center;
 }
