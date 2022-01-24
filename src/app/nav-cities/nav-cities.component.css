@@ -1,0 +1,15 @@
+img {
+    height: 100px;
+    width: 160px;
+}
+
+.card {
+    width: 400px;
+    height: 100px;
+    margin: 25px;
+    justify-content: center;
+}
+
+h2 {
+    margin: 0px 25px;
+}

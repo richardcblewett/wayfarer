@@ -13,7 +13,7 @@
         <li> Cities
             <ul>
                 <li *ngFor="let city of cities">
-                    <a routerLink="/cities/{{city.id}}">{{city.name}}</a>
+                    <a routerLink="/cities/{{city.id}}" (click)="collapse.toggle()">{{city.name}}</a>
                 </li>
             </ul>
         </li>

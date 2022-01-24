@@ -1,4 +1,17 @@
 img {
     height: 400px;
-    width: auto;
+    width: 640px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 25px;
+}
+
+.cities {
+    grid-column: 1;
+    grid-row: 1 / span 4;
+    margin: 0px;
 }
