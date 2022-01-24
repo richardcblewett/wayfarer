@@ -1,4 +1,17 @@
 <h2>{{city.name}}</h2>
 <img src={{city.image}} alt="image of the city">
-<h3>Posts</h3>
-<app-posts></app-posts>
+<h3>{{this.cityName}} Posts</h3>
+<div>
+    <ul *ngFor="let post of posts">
+        <li  *ngIf="city.name === post.city">
+            <span>
+            <h3><a routerLink="/cities/{{city.id}}/posts/{{post.id}}">{{post.title}}</a></h3>
+            <p>{{post.summary}}</p>
+            <p>{{post.date | date}}</p></span>
+        </li>
+        
+    </ul>
+
+    
+</div>
+<router-outlet></router-outlet>
