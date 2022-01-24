@@ -2,7 +2,6 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { HttpClientModule } from '@angular/common/http';
 import {ComponentFixture, fakeAsync, TestBed} from '@angular/core/testing';
 import { CitiesComponent } from './cities.component';
-import {RouterTestingModule} from "@angular/router/testing";
 import {Location} from "@angular/common";
 import {Router} from "@angular/router";
 import {AppRoutingModule} from "../app-routing.module";
@@ -16,7 +15,7 @@ describe('CitiesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RouterTestingModule, AppRoutingModule,HttpClientModule],
+      imports: [RouterTestingModule, AppRoutingModule, HttpClientModule],
       declarations: [ CitiesComponent ]
     })
     .compileComponents();

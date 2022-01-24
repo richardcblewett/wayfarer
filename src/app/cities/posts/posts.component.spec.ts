@@ -23,7 +23,7 @@ describe('PostsComponent', () => {
   });
 
   it('should create', () => {
-    component.post.id = 1;
+    component = fixture.componentInstance;
     expect(component).toBeTruthy();
   });
   describe("post title", ()=>{
@@ -33,7 +33,7 @@ describe('PostsComponent', () => {
     });
     it(' title should be less than 200 characters', ()=>{
       component.post= {title: "Meh"};
-      expect(component.post.title.length).toBeLessThan(200);      
+      expect(component.post.title.length).toBeLessThan(200);
     });
   })
   describe("post content", ()=>{
@@ -42,5 +42,5 @@ describe('PostsComponent', () => {
       expect(component.post.description).toBeTruthy;
     });
   })
-  
+
 });
