@@ -17,7 +17,12 @@ export class PostsComponent implements OnInit {
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    
+    this.route.paramMap.subscribe(params => {
+      this.post = POSTS.find(post => {
+        let paramId: string = params.get("id") || "";
+        return post.id === parseInt(paramId);
+      });
+    });
   }
 
 }
