@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CitiesComponent } from './cities.component';
-import { PostsComponent } from './posts/posts.component';
+import { PostComponent } from './posts/post/post.component';
+
 
 const citiesRoutes: Routes = [{
     path: "cities/:id",
     component: CitiesComponent,
     children: [{
         path: "posts/:id",
-        component: PostsComponent,
+        component: PostComponent,
     }]
 }]
 @NgModule({

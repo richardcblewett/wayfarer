@@ -12,6 +12,7 @@ import { CitiesComponent } from './cities/cities.component';
 import { PostsComponent } from './cities/posts/posts.component';
 import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
+import { PostComponent } from './cities/posts/post/post.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SearchComponent } from './search/search.component';
     CitiesComponent,
     PostsComponent,
     HomeComponent,
-    SearchComponent
+    SearchComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,

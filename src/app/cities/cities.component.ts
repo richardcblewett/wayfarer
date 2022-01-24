@@ -13,6 +13,7 @@ export class CitiesComponent implements OnInit {
   city: any;
   cityName: string = "";
   cityImage: string = "";
+  posts = POSTS;
   
   constructor(private route: ActivatedRoute) { }
 

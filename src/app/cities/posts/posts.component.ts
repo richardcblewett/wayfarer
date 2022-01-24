@@ -13,17 +13,11 @@ export class PostsComponent implements OnInit {
   
   post: any;
   posts= POSTS;
-  cityName= "San Francisco";
-  
+ 
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.route.paramMap.subscribe(params => {
-      this.post = POSTS.find(post => {
-        let paramId: string = params.get("id") || "";
-        return post.id === parseInt(paramId);
-      });
-    });
+    
   }
 
 }
