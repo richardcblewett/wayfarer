@@ -5,7 +5,8 @@ export const POSTS = [{
     description: "Take a ride down Lombard Street. eu facilisis sed odio morbi quis. Tristique senectus et netus et malesuada fames ac turpis. Leo vel orci porta non pulvinar. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. In eu mi bibendum neque egestas congue. Sed risus ultricies tristique nulla aliquet enim tortor.",
     author: "Cup Half Full",
     date: "1/22/2022",
-    city: "San Francisco"
+    city: "San Francisco",
+    cityId :1
 },{
     id: 2,
     title: "Worst City in the World",
@@ -13,7 +14,8 @@ export const POSTS = [{
     description: "Urna molestie at elementum eu facilisis sed odio morbi quis. Tristique senectus et netus et malesuada fames ac turpis. Leo vel orci porta non pulvinar. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. In eu mi bibendum neque egestas congue. Sed risus ultricies tristique nulla aliquet enim tortor.",
     author: "Cup Half Empty",
     date: "1/21/2022",
-    city: "San Francisco"
+    city: "San Francisco",
+    cityId :1
 },{
     id: 3,
     title: "Meh Capital of the World",
@@ -21,7 +23,8 @@ export const POSTS = [{
     description: "Golden Gate Bridge lacks luster. Urna molestie at elementum eu facilisis sed odio morbi quis. Tristique senectus et netus et malesuada fames ac turpis. Leo vel orci porta non pulvinar. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. In eu mi bibendum neque egestas congue. Sed risus ultricies tristique nulla aliquet enim tortor.",
     author: "Just A Cup",
     date: "1/19/2022",
-    city: "San Francisco"
+    city: "San Francisco",
+    cityId :1
 },
 {
     id: 4,
@@ -30,7 +33,8 @@ export const POSTS = [{
     description: "London Bridge is still standing what a rip off. Urna molestie at elementum eu facilisis sed odio morbi quis. Tristique senectus et netus et malesuada fames ac turpis. Leo vel orci porta non pulvinar. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. In eu mi bibendum neque egestas congue. Sed risus ultricies tristique nulla aliquet enim tortor.",
     author: "Just A Cup",
     date: "1/19/2022",
-    city: "London"
+    city: "London",
+    cityId :2
 },
 {
     id: 5,
@@ -39,7 +43,8 @@ export const POSTS = [{
     description: "Bring a raincoat.Urna molestie at elementum eu facilisis sed odio morbi quis. Tristique senectus et netus et malesuada fames ac turpis. Leo vel orci porta non pulvinar. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. In eu mi bibendum neque egestas congue. Sed risus ultricies tristique nulla aliquet enim tortor.",
     author: "Just A Cup",
     date: "1/19/2022",
-    city: "Seattle"
+    city: "Seattle",
+    cityId : 3
 },
 {
     id: 6,
@@ -48,7 +53,8 @@ export const POSTS = [{
     description: "Wear your best coat. Urna molestie at elementum eu facilisis sed odio morbi quis. Tristique senectus et netus et malesuada fames ac turpis. Leo vel orci porta non pulvinar. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. In eu mi bibendum neque egestas congue. Sed risus ultricies tristique nulla aliquet enim tortor.",
     author: "Just A Cup",
     date: "1/19/2022",
-    city: "Sydney"
+    city: "Sydney",
+    cityId : 4
 },
 {
     id: 7,
@@ -57,7 +63,8 @@ export const POSTS = [{
     description: "Urna molestie at elementum eu facilisis sed odio morbi quis. Tristique senectus et netus et malesuada fames ac turpis. Leo vel orci porta non pulvinar. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. In eu mi bibendum neque egestas congue. Sed risus ultricies tristique nulla aliquet enim tortor.",
     author: "Just A Cup",
     date: "1/18/2022",
-    city: "London"
+    city: "London",
+    cityId: 2
 },{
     id: 8,
     title: "",
@@ -65,6 +72,7 @@ export const POSTS = [{
     description: "",
     author: "Just A Cup",
     date: "1/18/2022",
-    city: "London"
+    city: "London",
+    cityId: 2
 },
 ]

@@ -1,1 +1,17 @@
-<input type="text" placeholder="search posts" [(ngModel)]="search"><input (click)="findPost(search)" type="submit" value="Search"/>
+<div>
+  <input type="text" placeholder="search posts" [(ngModel)]="search" routerLink="/search"/>
+  <input (click)="findPost(search)" type="submit" value="Search" routerLink="/search"/>
+</div>
+
+<div class="container-fluid" *ngIf="matchingPosts.length>0">
+  <div *ngFor="let post of matchingPosts" class="card row">
+    <!-- the "container" keeps the card nicely aligned -->
+    <h3>
+      <a class="card-link" routerLink="/cities/{{post?.cityId}}/posts/{{post?.id}}">{{post?.title}}</a>
+    </h3>
+    <h4>
+      <a class="card-link" routerLink="/cities/{{post?.cityId}}">{{post?.city}}</a>
+    </h4>
+    {{post.summary}}
+  </div>
+</div>
