@@ -1,8 +1,8 @@
-<div>
+<div class="container">
   <input type="text" placeholder="search posts" [(ngModel)]="search" routerLink="/search"/>
   <input (click)="findPost(search)" type="submit" value="Search" routerLink="/search"/>
 </div>
-
+<br>
 <div class="container-fluid" *ngIf="matchingPosts.length>0">
   <div *ngFor="let post of matchingPosts" class="card row">
     <!-- the "container" keeps the card nicely aligned -->
@@ -14,4 +14,7 @@
     </h4>
     {{post.summary}}
   </div>
+</div>
+<div *ngIf="matchingPosts.length===0" class="noResults">
+  No Search Results.
 </div>

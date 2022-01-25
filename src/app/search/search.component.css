@@ -5,3 +5,13 @@
   justify-content: center;
   margin: auto;
 }
+.container {
+  margin-left:auto;
+  margin-top: -50px;
+  justify-content: center;
+}
+
+.noResults {
+  margin-left: 200px;
+  justify-content: center;
+}
