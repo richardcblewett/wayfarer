@@ -14,7 +14,10 @@ export class CitiesComponent implements OnInit {
   posts = POSTS;
 
   constructor(private route: ActivatedRoute) { }
-
+  findWeather(){
+    console.log(this.city.name);
+    
+   }
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
       this.city = locations.find(city => {
