@@ -69,5 +69,17 @@ Design a travel website, for the shadowy organization Wayfarer*.
 
 ## Program Details
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+### Other technologies used:
 
+- Node.js
+- BootStrap
+- Heroku
+- Jasmine
+- Agile
+- Pair Programming
+
+### Hiccups and Areas to Grow:
+  - Testing for components that did not exist yet.
+  - Underestimating the need to clarify details for sprints 3 and 4. 
+  - Gain a better understanding of who Wayfarer is and how they want to use this site.
 
