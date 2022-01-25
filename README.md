@@ -48,7 +48,7 @@ Design a travel website, for the shadowy organization Wayfarer*.
 3. A post's content must not be empty.
 
 ### Sprint 4: It's Raining...(Day 4 and beyond)
-1. Call [Open Weather API](https://openweathermap.org/current) for each city to display the current weather on each city's page.
+1. Call [Open Weather API](https://openweathermap.org/current) for each city to display the current weather on each city's page. (In progress)
 
 ### Where to go from here
 
